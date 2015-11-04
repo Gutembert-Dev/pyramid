@@ -5,7 +5,7 @@ This program welcomes any user to the Home page and request a Wikipedia link (ur
 
 To use this program, just clone this repository and you can run these command on any Linux - Ubuntu machine:
 $ sudo apt-get install git
-$ git clone .... && cd pyramid 
+$ git clone https://github.com/Gutembert-Dev/pyramid.git && cd pyramid 
 $ sudo apt-get install python-virtualenv
 $ virtualenv pyramid
 $ source pyramid/bin/activate
