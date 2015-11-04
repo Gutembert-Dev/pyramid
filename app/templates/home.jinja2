@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if title %}
+			<title>{{ title }} - Pyramid</title>
+		{% else %}
+			<title> Welcome to Siyavula</title>
+		{% endif %}
+		<style>
+			h1 {
+				  font-size: 20px;
+				  font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+				  font-weight: normal;
+				  color: #B8A500;
+				}
+
+			div {
+				  font-size: 20px;
+				  font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+				  font-weight: normal;
+				  color: #B8A500;
+				}
+		</style>
+		<script type="text/javascript">
+		    function wiki_check()                       /*A bit of javascript for alerting a user in case the url is not from Wekipedia site*/
+		    {
+		    	var url  = document.getElementById("urlId").value
+		    	var name = 'wiki';
+		    	if(url.indexOf(name) === -1)
+		    	{
+		        	alert("Sorry!!! This is not a Wikipedia link. Please enter a wekipedia link only.") ; 
+		    	}
+		    }
+		</script>
+	</head>
+	<body>
+		<div>Siyavula: <a href="/">Home</a></div>
+		<hr>
+		<form action="" method="post" name="home" id="homeForm">
+			<b><h1 style="color:blue" align="center"> Welcome to Siyavula</h1></b>
+			<br/>
+
+			<div style="color:black">
+      			Wiki URL: <input type="text" name="url" id="urlId"/>
+    		</div>
+  
+      		<p><input type="submit" onclick="wiki_check();" value="Submit"> </p>
+    	</form
+	</body>
+</html>
